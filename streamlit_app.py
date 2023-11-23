@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the model
-loaded_model = joblib.load('model.pkl')
+loaded_model = joblib.load("C:\\Users\\prash\\OneDrive\\Documents\\temp\\credit_card_fraud\\saved_models\\0\\model\\model.pkl")
 
 # Title for the app
 st.title('Machine Learning Model Deployment with Streamlit')
