@@ -50,11 +50,11 @@ class ModelTrainer:
 
             logging.info(f"Calculating f1 train score")
             yhat_test=model.predict(x_train)
-            f1_train_score=f1_score(y_true=y_train,y_pred=yhat_test)
+            f1_train_score=f1_score(y_true=y_train,y_pred=yhat_test,average='weighted')
 
             logging.info(f"Calculating f1 test score")
             yhat_test = model.predict(x_test)
-            f1_test_score  =f1_score(y_true=y_test, y_pred=yhat_test)
+            f1_test_score  =f1_score(y_true=y_test, y_pred=yhat_test,average='weighted')
 
             logging.info(f"train score:{f1_train_score} and tests score {f1_test_score}")
                         #check for overfitting or underfiiting or expected score

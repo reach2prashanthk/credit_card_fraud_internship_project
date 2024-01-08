@@ -48,6 +48,8 @@ class DataValidationConfig:
         self.missing_threshold:float=0.2
         self.base_file_path=os.path.join("C:\\Users\\prash\\Downloads\\creditcard\\credit_card\\creditcard.csv")
 
+        
+
 
 class DataTransformationConfig:
     def __init__(self,training_pipeline_config:TrainingPipelineConfig):
